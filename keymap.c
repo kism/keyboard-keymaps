@@ -10,6 +10,9 @@ enum anne_pro_layers {
   _FN1_LAYER,
   _FN2_LAYER,
   _FN3_LAYER,
+  _FN4_LAYER,
+  _FN5_LAYER,
+  _FN6_LAYER,
 };
 
 enum custom_keycodes {

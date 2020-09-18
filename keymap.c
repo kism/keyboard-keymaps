@@ -12,6 +12,24 @@ enum anne_pro_layers {
   _FN3_LAYER,
 };
 
+enum custom_keycodes {
+    QMKBEST = SAFE_RANGE,
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+    case QMKBEST:
+        if (record->event.pressed) {
+            // when keycode QMKBEST is pressed
+            SEND_STRING("QMK is the best thing ever!");
+        } else {
+            // when keycode QMKBEST is released
+        }
+        break;
+    }
+    return true;
+};
+
 /*
 * Layer _BASE_LAYER
 * ,-----------------------------------------------------------------------------------------.
@@ -47,7 +65,7 @@ enum anne_pro_layers {
     KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, LT(_FN1_LAYER,KC_LEFT), LT(_FN2_LAYER,KC_DOWN), RCTL_T(KC_RGHT)
 ),
   /*
-  * Layer _FN1_LAYER
+  * Layer _FN1_LAYER | F1 - F12
   * ,-----------------------------------------------------------------------------------------.
   * |  `  |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |  DELETE   |
   * |-----------------------------------------------------------------------------------------+
@@ -69,7 +87,7 @@ enum anne_pro_layers {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN1_LAYER), MO(_FN3_LAYER), KC_TRNS
 ),
   /*
-  * Layer _FN2_LAYER
+  * Layer _FN2_LAYER | Media Keys
   * ,-----------------------------------------------------------------------------------------.
   * | ~ |MyCom|HTTP|CALC |MPLAY |PREV |NEXT |P/PAUSE|STOP |MUTE |VOL- |VOL+ | F12 |    Bksp   |
   * |-----------------------------------------------------------------------------------------+
@@ -91,7 +109,7 @@ enum anne_pro_layers {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN2_LAYER), KC_TRNS
  ),
    /*
-  * Layer _FN3_LAYER
+  * Layer _FN3_LAYER | F13-24
   * ,-----------------------------------------------------------------------------------------.
   * |  `  | F13 | F14 | F15 | F16 | F17 | F18 | F19 | F20 | F21 | F22 | F23 | F24 |  DELETE   |
   * |-----------------------------------------------------------------------------------------+
@@ -110,7 +128,76 @@ enum anne_pro_layers {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), KC_TRNS
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN4_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN5_LAYER)
+
+ ),
+   /*
+  * Layer _FN4_LAYER
+  * ,-----------------------------------------------------------------------------------------.
+  * | esc |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |    Bksp   |
+  * |-----------------------------------------------------------------------------------------+
+  * | Tab    |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |  [  |  ]  |   \    |
+  * |-----------------------------------------------------------------------------------------+
+  * | Esc     |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
+  * |-----------------------------------------------------------------------------------------+
+  * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
+  * |-----------------------------------------------------------------------------------------+
+  * | Ctrl  |  L1   |  Alt  |               space             |  FN6  |       |       | FN5   |
+  * \-----------------------------------------------------------------------------------------/
+  *
+  */
+ [_FN4_LAYER] = KEYMAP(
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN4_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER)
+
+ ),
+    /*
+  * Layer _FN4_LAYER
+  * ,-----------------------------------------------------------------------------------------.
+  * | esc |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |    Bksp   |
+  * |-----------------------------------------------------------------------------------------+
+  * | Tab    |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |  [  |  ]  |   \    |
+  * |-----------------------------------------------------------------------------------------+
+  * | Esc     |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
+  * |-----------------------------------------------------------------------------------------+
+  * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
+  * |-----------------------------------------------------------------------------------------+
+  * | Ctrl  |  L1   |  Alt  |               space             |  FN4  |       |       | FN6   |
+  * \-----------------------------------------------------------------------------------------/
+  *
+  */
+ [_FN5_LAYER] = KEYMAP(
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN6_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN5_LAYER)
+
+ ),
+    /*
+  * Layer _FN5_LAYER
+  * ,-----------------------------------------------------------------------------------------.
+  * | esc |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |    Bksp   |
+  * |-----------------------------------------------------------------------------------------+
+  * | Tab    |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |  [  |  ]  |   \    |
+  * |-----------------------------------------------------------------------------------------+
+  * | Esc     |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
+  * |-----------------------------------------------------------------------------------------+
+  * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
+  * |-----------------------------------------------------------------------------------------+
+  * | Ctrl  |  L1   |  Alt  |               space             |  Alt  |       |       | Ctrl  |
+  * \-----------------------------------------------------------------------------------------/
+  *
+  */
+ [_FN6_LAYER] = KEYMAP(
+    QMKBEST, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN6_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER)
 
  ),
 };

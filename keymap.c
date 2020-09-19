@@ -15,10 +15,6 @@ enum anne_pro_layers {
   _FN6_LAYER,
 };
 
-enum custom_keycodes {
-  QMKBEST = SAFE_RANGE,
-};
-
 /*
 * Layer _BASE_LAYER
 * ,-----------------------------------------------------------------------------------------.
@@ -182,10 +178,10 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *
 */
 [_FN6_LAYER] = KEYMAP(
-   QMKBEST, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+   KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_TRNS,
+   KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_TRNS,
+   KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_TRNS,
+   KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN6_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER)
 
 ),
@@ -203,15 +199,3 @@ void matrix_scan_user(void) {
 layer_state_t layer_state_set_user(layer_state_t layer) {
   return layer;
 }
-
-bool process_record_user(uint16_t keycode, keyrecord_t* record) {
-  switch (keycode) {
-  case QMKBEST:
-    if (record->event.pressed) {
-      SEND_STRING("QMK is the best thing ever!");
-    }
-    return false;
-    break;
-  }
-  return true;
-};

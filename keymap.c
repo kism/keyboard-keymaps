@@ -19,20 +19,6 @@ enum custom_keycodes {
     QMKBEST = SAFE_RANGE,
 };
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-    case QMKBEST:
-        if (record->event.pressed) {
-            // when keycode QMKBEST is pressed
-            SEND_STRING("QMK is the best thing ever!");
-        } else {
-            // when keycode QMKBEST is released
-        }
-        break;
-    }
-    return true;
-};
-
 /*
 * Layer _BASE_LAYER
 * ,-----------------------------------------------------------------------------------------.
@@ -217,3 +203,17 @@ void matrix_scan_user(void) {
 layer_state_t layer_state_set_user(layer_state_t layer) {
     return layer;
 }
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+    case QMKBEST:
+        if (record->event.pressed) {
+            // when keycode QMKBEST is pressed
+            SEND_STRING("QMK is the best thing ever!");
+        } else {
+            // when keycode QMKBEST is released
+        }
+        break;
+    }
+    return true;
+};

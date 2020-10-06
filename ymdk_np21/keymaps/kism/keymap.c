@@ -1,19 +1,46 @@
 #include QMK_KEYBOARD_H
 
 enum custom_keycodes {
-    QMKBEST = SAFE_RANGE,
+    PEPSI = SAFE_RANGE,
+    KEEB,
+    LOSS,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-    case QMKBEST:
+    case PEPSI:
         if (record->event.pressed) {
-            // when keycode QMKBEST is pressed
-            SEND_STRING("QMK is the best thing ever!");
+            // when keycode PEPSI is pressed
+            SEND_STRING("PEPSI");
+            SEND_STRING(SS_TAP(X_ENTER));
         } else {
-            // when keycode QMKBEST is released
+            // when keycode PEPSI is released
         }
         break;
+    case KEEB:
+        if (record->event.pressed) {
+            // when keycode KEEB is pressed
+            SEND_STRING(SS_DOWN(X_LCTRL)SS_DOWN(X_T)SS_UP(X_LCTRL)SS_UP(X_T));
+            SEND_STRING(SS_DELAY(30));
+            SEND_STRING("https://autist.network/keeb");
+            SEND_STRING(SS_TAP(X_ENTER));
+        } else {
+            // when keycode KEEB is released
+        }
+        break;
+    case LOSS:
+        if (record->event.pressed) {
+            // when keycode LOSS is pressed
+            SEND_STRING(SS_DOWN(X_LCTRL)SS_DOWN(X_T)SS_UP(X_LCTRL)SS_UP(X_T));
+            SEND_STRING(SS_DELAY(30));
+            SEND_STRING("https://cad-comic.com/comic/loss/");
+            SEND_STRING(SS_TAP(X_ENTER));
+        } else {
+            // when keycode LOSS is released
+        }
+        break;
+
+
     }
     return true;
 };
@@ -27,10 +54,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                KC_P0,   KC_P0,   KC_PDOT, KC_PENT),
 
         [1] = LAYOUT_ortho_6x4(KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
-                               QMKBEST, QMKBEST, QMKBEST, KC_NO, 
-                               QMKBEST, QMKBEST, QMKBEST, KC_NO, 
-                               QMKBEST, QMKBEST, QMKBEST, KC_NO, 
-                               QMKBEST, QMKBEST, QMKBEST, KC_TRNS, 
+                               PEPSI,   PEPSI,   PEPSI,   KC_NO, 
+                               PEPSI,   PEPSI,   PEPSI,   KC_NO, 
+                               LOSS,    LOSS,    LOSS,   KC_NO, 
+                               KEEB,    KEEB,    KEEB,    KC_TRNS, 
                                KC_NO,   KC_NO,   KC_NO,   KC_TRNS),
 
         [2] = LAYOUT_ortho_6x4(KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 

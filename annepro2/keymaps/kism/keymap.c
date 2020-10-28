@@ -26,7 +26,7 @@ enum anne_pro_layers {
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
 * |-----------------------------------------------------------------------------------------+
-* | Ctrl  |  L1   |  Alt  |               space             |  FN1  |  FN2  |  Alt  | Ctrl  |
+* | Ctrl  |  GUI  |  Alt  |               space             |  FN1  |  FN2  |  Alt  | Ctrl  |
 * \-----------------------------------------------------------------------------------------/
 * Layer TAP in _BASE_LAYER
 * ,-----------------------------------------------------------------------------------------.
@@ -60,7 +60,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |INSRT| DEL |    Shift       |
 * |-----------------------------------------------------------------------------------------+
-* | Ctrl  |  L1   |  Alt  |               space             |  Alt  |  FN1  |  FN3  | Ctrl  |
+* | Ctrl  |  GUI  |  Alt  |               space             | FN1  |  FN3  |  Alt  |  Ctrl  |
 * \-----------------------------------------------------------------------------------------/
 *
 */
@@ -69,7 +69,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR, KC_HOME, KC_END, KC_TRNS,
    KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGUP, KC_PGDN, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_INS, KC_DEL, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN1_LAYER), MO(_FN3_LAYER), KC_TRNS
+   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN1_LAYER), MO(_FN3_LAYER), KC_TRNS,  KC_TRNS
 ),
 /*
 * Layer _FN2_LAYER | Media Keys
@@ -82,7 +82,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-----------------------------------------------------------------------------------------+
 * | Shift      | BT1 | BT2 | BT3 | BT4 |LEDON|LEDOFF| m  |  ,  |  .  |  /  |    Shift       |
 * |-----------------------------------------------------------------------------------------+
-* | Ctrl  |  L1   |  Alt  |               space             |  Alt  |  FN3  |  FN2  | Ctrl  |
+* | Ctrl  |  GUI  |  Alt  |               space             |  FN3  |  FN2  | Alt  |  Ctrl  |
 * \-----------------------------------------------------------------------------------------/
 *
 */
@@ -91,7 +91,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_AP2_BT1, KC_AP2_BT2, KC_AP2_BT3, KC_AP2_BT4, KC_AP_LED_ON, KC_AP_LED_OFF, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN2_LAYER), KC_TRNS
+   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN2_LAYER), KC_TRNS, KC_TRNS
 ),
 /*
 * Layer _FN3_LAYER | F13-24
@@ -104,7 +104,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
 * |-----------------------------------------------------------------------------------------+
-* | Ctrl  |  L1   |  Alt  |               space             |  Alt  |       |       | Ctrl  |
+* | Ctrl  |  GUI  |  Alt  |               space             |       |       |  Alt  | Ctrl  |
 * \-----------------------------------------------------------------------------------------/
 *
 */
@@ -113,7 +113,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN4_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN5_LAYER)
+   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN4_LAYER),  MO(_FN5_LAYER)
 
 ),
 /*
@@ -127,7 +127,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
 * |-----------------------------------------------------------------------------------------+
-* | Ctrl  |  L1   |  Alt  |               space             |  FN6  |       |       | FN5   |
+* | Ctrl  |  GUI  |  Alt  |               space             |       |       | FN6   | FN5   |
 * \-----------------------------------------------------------------------------------------/
 *
 */
@@ -136,7 +136,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN4_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER)
+   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN4_LAYER),  MO(_FN6_LAYER)
 
 ),
 /*
@@ -150,7 +150,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
 * |-----------------------------------------------------------------------------------------+
-* | Ctrl  |  L1   |  Alt  |               space             |  FN4  |       |       | FN6   |
+* | Ctrl  |  GUI  |  Alt  |               space             |       |       |  FN4  | FN6   |
 * \-----------------------------------------------------------------------------------------/
 *
 */
@@ -159,7 +159,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN6_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN5_LAYER)
+   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER), MO(_FN5_LAYER)
 
 ),
 /*
@@ -173,16 +173,16 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  P  |  E  |  P  |  S  |  I  |    |  P  |  E  |  P  |  S   |    Shift       |
 * |-----------------------------------------------------------------------------------------+
-* | Ctrl  |  L1   |  Alt  |               space             |  Alt  |       |       | Ctrl  |
+* | Ctrl  |  GUI  |  Alt  |               space             |      |       |   Alt  | Ctrl  |
 * \-----------------------------------------------------------------------------------------/
 *
 */
 [_FN6_LAYER] = KEYMAP(
    KC_TRNS, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_0, KC_I, KC_SPC, KC_TRNS,
    KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_TRNS,
-   KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_TRNS,
+   KC_NLCK, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_TRNS,
    KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN6_LAYER), MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER)
+   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER),  MO(_FN6_LAYER)
 
 ),
 };

@@ -1,5 +1,5 @@
 //mkdir annepro-qmk/keyboards/annepro2/keymaps/kism/
-//ln qmk-keymap-annepro2/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
+//ln qmk-keymaps/annepro2/keymaps/kism/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
 
 #include <stdint.h>
 #include "annepro2.h"

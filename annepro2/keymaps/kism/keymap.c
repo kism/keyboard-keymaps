@@ -1,27 +1,5 @@
-//git clone https://github.com/OpenAnnePro/qmk_firmware.git annepro-qmk --recursive --depth 1
-//git clone https://github.com/OpenAnnePro/annepro2-shine.git --recursive
-//git clone https://github.com/OpenAnnePro/AnnePro2-Tools.git
-
 //mkdir annepro-qmk/keyboards/annepro2/keymaps/kism/
-//ln qmk-keymaps/annepro2/keymaps/kism/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
-
-//cd annepro-qmk
-//git pull
-//make annepro2/c18
-//cd ..
-
-//cd annepro2-shine
-//git pull
-//make C18
-//cd ..
-
-//cd AnnePro2-Tools
-//git pull
-//cargo build --release
-//cd ..
-
-//sudo ./AnnePro2-Tools/target/release/annepro2_tools annepro-qmk/annepro2_c18_kism.bin
-//sudo ./AnnePro2-Tools/target/release/annepro2_tools --boot -t led annepro2-shine/build/annepro2-shine-C18.bin
+//ln qmk-keymap-annepro2/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
 
 #include <stdint.h>
 #include "annepro2.h"
@@ -141,11 +119,11 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*
 * Layer _FN4_LAYER
 * ,-----------------------------------------------------------------------------------------.
-* | `   |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |    Bksp   |
+* | `   | K1  | K2  | K3  | K4  | K5  | K6  | K7  | K8  | K9  | K0  | K-  | K=  |    Bksp   |
 * |-----------------------------------------------------------------------------------------+
 * | Tab    |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |  [  |  ]  |   \    |
 * |-----------------------------------------------------------------------------------------+
-* | Esc     |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
+* | Numlock |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
 * |-----------------------------------------------------------------------------------------+
@@ -154,9 +132,9 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *
 */
 [_FN4_LAYER] = KEYMAP(
+   KC_TRNS, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_0, KC_KP_MINUS, KC_KP_EQUAL, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+   KC_NUMLOCK, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN4_LAYER), MO(_FN6_LAYER)
 
@@ -168,7 +146,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * |-----------------------------------------------------------------------------------------+
 * | Tab    |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |  [  |  ]  |   \    |
 * |-----------------------------------------------------------------------------------------+
-* | Esc     |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
+* | Numlock |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |    Enter    |
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |    Shift       |
 * |-----------------------------------------------------------------------------------------+
@@ -179,7 +157,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FN5_LAYER] = KEYMAP(
    KC_TRNS, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_0, KC_KP_MINUS, KC_KP_EQUAL, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+   KC_NUMLOCK, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER), MO(_FN4_LAYER)
 
@@ -187,11 +165,11 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*
 * Layer _FN5_LAYER
 * ,-----------------------------------------------------------------------------------------.
-* | `   |   P  |  E  |  P  |  S  |  I  |    |  P  |  E  |  P  |  S  |  I  |     |    Bksp   |
+* | `   | K1  | K2  | K3  | K4  | K5  | K6  | K7  | K8  | K9  | K0  | K-  | K=  |    Bksp   |
 * |-----------------------------------------------------------------------------------------+
 * | Tab    |  P  |  E  |  P  |  S  |  I  |    |  P  |  E  |  P  |  S  |  I  |     |   \     |
 * |-----------------------------------------------------------------------------------------+
-* | Esc     |  P  |  E  |  P  |  S  |  I  |    |  P  |  E  |  P  |  S  |  I   |    Enter    |
+* | Numlock |  P  |  E  |  P  |  S  |  I  |    |  P  |  E  |  P  |  S  |  I   |    Enter    |
 * |-----------------------------------------------------------------------------------------+
 * | Shift      |  P  |  E  |  P  |  S  |  I  |    |  P  |  E  |  P  |  S   |    Shift       |
 * |-----------------------------------------------------------------------------------------+
@@ -200,9 +178,9 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *
 */
 [_FN6_LAYER] = KEYMAP(
+   KC_TRNS, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_0, KC_KP_MINUS, KC_KP_EQUAL, KC_TRNS,
    KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_TRNS,
-   KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_TRNS,
-   KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_TRNS,
+   KC_NUMLOCK, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_I, KC_TRNS,
    KC_TRNS, KC_P, KC_E, KC_P, KC_S, KC_I, KC_SPC, KC_P, KC_E, KC_P, KC_S, KC_TRNS,
    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(_FN3_LAYER), MO(_FN3_LAYER), MO(_FN6_LAYER), MO(_FN6_LAYER)
 

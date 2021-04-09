@@ -1,3 +1,7 @@
+//git clone https://github.com/OpenAnnePro/qmk_firmware.git annepro-qmk --recursive --depth 1
+//git clone https://github.com/OpenAnnePro/annepro2-shine.git --recursive
+//git clone https://github.com/OpenAnnePro/AnnePro2-Tools.git
+
 //cd annepro-qmk
 //git pull
 //mkdir annepro-qmk/keyboards/annepro2/keymaps/kism/

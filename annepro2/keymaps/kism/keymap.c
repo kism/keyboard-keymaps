@@ -7,7 +7,6 @@
 
 //cd annepro-qmk
 //git pull
-//mkdir annepro-qmk/keyboards/annepro2/keymaps/kism/
 //make annepro2/c18
 //cd ..
 

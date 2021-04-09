@@ -2,10 +2,10 @@
 //git clone https://github.com/OpenAnnePro/annepro2-shine.git --recursive
 //git clone https://github.com/OpenAnnePro/AnnePro2-Tools.git
 
+//ln qmk-keymaps/annepro2/keymaps/kism/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
 //cd annepro-qmk
 //git pull
 //mkdir annepro-qmk/keyboards/annepro2/keymaps/kism/
-//ln qmk-keymaps/annepro2/keymaps/kism/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
 //make annepro2/c18
 //cd ..
 

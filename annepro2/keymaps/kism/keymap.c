@@ -1,5 +1,22 @@
+//cd annepro-qmk
+//git pull
 //mkdir annepro-qmk/keyboards/annepro2/keymaps/kism/
 //ln qmk-keymaps/annepro2/keymaps/kism/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
+//make annepro2/c18
+//cd ..
+
+//cd annepro2-shine
+//git pull
+//make C18
+//cd ..
+
+//cd AnnePro2-Tools
+//git pull
+//cargo build --release
+//cd ..
+
+//sudo ./AnnePro2-Tools/target/release/annepro2_tools annepro-qmk/annepro2_c18_kism.bin
+//sudo ./AnnePro2-Tools/target/release/annepro2_tools --boot -t led annepro2-shine/build/annepro2-shine-C18.bin
 
 #include <stdint.h>
 #include "annepro2.h"

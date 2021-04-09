@@ -1,5 +1,27 @@
+//git clone https://github.com/OpenAnnePro/qmk_firmware.git annepro-qmk --recursive --depth 1
+//git clone https://github.com/OpenAnnePro/annepro2-shine.git --recursive
+//git clone https://github.com/OpenAnnePro/AnnePro2-Tools.git
+
 //mkdir annepro-qmk/keyboards/annepro2/keymaps/kism/
-//ln qmk-keymap-annepro2/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
+//ln qmk-keymaps/annepro2/keymaps/kism/keymap.c annepro-qmk/keyboards/annepro2/keymaps/kism/keymap.c
+
+//cd annepro-qmk
+//git pull
+//make annepro2/c18
+//cd ..
+
+//cd annepro2-shine
+//git pull
+//make C18
+//cd ..
+
+//cd AnnePro2-Tools
+//git pull
+//cargo build --release
+//cd ..
+
+//sudo ./AnnePro2-Tools/target/release/annepro2_tools annepro-qmk/annepro2_c18_kism.bin
+//sudo ./AnnePro2-Tools/target/release/annepro2_tools --boot -t led annepro2-shine/build/annepro2-shine-C18.bin
 
 #include <stdint.h>
 #include "annepro2.h"

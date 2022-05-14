@@ -46,7 +46,9 @@ cargo build --release
 
 ### Program firmware
 
-Use vial and sideload the via json https://get.vial.today/
+Use vial and sideload the via json 
+
+https://get.vial.today/
 
 https://github.com/Jpe230/qmk_firmware/blob/jpe230_ap2/keyboards/annepro2/keymaps/via/via_ansi_c18.json
 

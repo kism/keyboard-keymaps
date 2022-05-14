@@ -10,7 +10,6 @@ Original guide: https://www.reddit.com/r/AnnePro/comments/txgecj/anne_pro_2_with
 
 `pacman -S rust gcc make`
 
-https://openannepro.github.io/install/
 
 ```
 git clone -b jpe230_ap2 --single-branch --recursive https://github.com/Jpe230/qmk_firmware.git
@@ -21,6 +20,8 @@ make annepro2/c18:via
 After compilation the file will be in the current directory with the name `annepro2_c18_via.bin`
 
 ### Flash Firmware
+
+https://openannepro.github.io/install/
 
 #### Windows
 

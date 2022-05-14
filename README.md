@@ -19,7 +19,7 @@ https://openannepro.github.io/install/
 
 ```choco install rust
 choco install mingw
-git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
+git clone https://github.com/OpenAnnePro/AnnePro2-Tools.git
 cd AnnePro2-Tools.git
 cargo build --release
 .\annepro2_tools.exe .\annepro2_c18_via.bin
@@ -28,7 +28,7 @@ cargo build --release
 #### Linux
 
 ```pacman -S rust gcc make
-git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
+git clone https://github.com/OpenAnnePro/AnnePro2-Tools.git
 cd AnnePro2-Tools.git
 cargo build --release
 ./annepro2_tools.exe annepro2_c18_via.bin
@@ -48,6 +48,8 @@ TKTKTKTK
 
 https://github.com/vial-kb/vial-qmk
 
-```make kbdfans/kbd67/mkiirgb/v3:vial```
+```git clone https://github.com/vial-kb/vial-qmk.git
+make kbdfans/kbd67/mkiirgb/v3:vial
+```
 
 https://get.vial.today/

@@ -18,28 +18,21 @@ https://openannepro.github.io/install/
 #### Windows
 
 ```choco install rust
-
 choco install mingw
-
 git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
-
 cd AnnePro2-Tools.git
-
 cargo build --release
-
-.\annepro2_tools.exe .\annepro2_c18_via.bin```
+.\annepro2_tools.exe .\annepro2_c18_via.bin
+```
 
 #### Linux
 
 ```pacman -S rust gcc make
-
 git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
-
 cd AnnePro2-Tools.git
-
 cargo build --release
-
-./annepro2_tools.exe annepro2_c18_via.bin```
+./annepro2_tools.exe annepro2_c18_via.bin
+```
 
 ### Program firmware
 

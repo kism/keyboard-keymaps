@@ -7,39 +7,39 @@ Keymap .json and .h files for my keebs
 
 Original guide: https://www.reddit.com/r/AnnePro/comments/txgecj/anne_pro_2_with_via/
 
-  pacman -S rust gcc make
+```pacman -S rust gcc make
 
 https://openannepro.github.io/install/
 
-  make annepro2/c18:via
+```make annepro2/c18:via
 
 ### Flash Firmware 
 
 #### Windows
 
-  choco install rust
+```choco install rust
 
-  choco install mingw
+```choco install mingw
 
-  git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
+```git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
 
-  cd AnnePro2-Tools.git
+```cd AnnePro2-Tools.git
 
-  cargo build --release
+```cargo build --release
 
-  .\annepro2_tools.exe .\annepro2_c18_via.bin
+```.\annepro2_tools.exe .\annepro2_c18_via.bin
 
 #### Linux
 
-  pacman -S rust gcc make
+```pacman -S rust gcc make
 
-  git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
+```git clone git@github.com:OpenAnnePro/AnnePro2-Tools.git
 
-  cd AnnePro2-Tools.git
+```cd AnnePro2-Tools.git
 
-  cargo build --release
+```cargo build --release
 
-  ./annepro2_tools.exe annepro2_c18_via.bin
+```./annepro2_tools.exe annepro2_c18_via.bin
 
 ### Program firmware
 
@@ -49,12 +49,12 @@ https://github.com/Jpe230/qmk_firmware/blob/jpe230_ap2/keyboards/annepro2/keymap
 
 ## YMDK NP21
 
-aaa
+TKTKTKTK
 
 ## KBD67 Lite MKii v3 Vial firmware
 
 https://github.com/vial-kb/vial-qmk
 
-  make kbdfans/kbd67/mkiirgb/v3:vial
+```make kbdfans/kbd67/mkiirgb/v3:vial
 
 https://get.vial.today/

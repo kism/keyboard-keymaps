@@ -5,7 +5,7 @@ Keymap .json and .h files for my keebs
 
 ### Compile firmware (Linux Only (in my opinion, use WSL))
 
-https://www.reddit.com/r/AnnePro/comments/txgecj/anne_pro_2_with_via/
+Original guide: https://www.reddit.com/r/AnnePro/comments/txgecj/anne_pro_2_with_via/
 
   pacman -S rust gcc make
 

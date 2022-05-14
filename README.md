@@ -1,6 +1,6 @@
 # keyboard-keymaps
 
-Keymap .json and .h files for my keebs
+Keymap .json, .via and .h files for my keebs
 
 ## ObinsKit/Hexcore Anne Pro 2 (c18) VIA Firmware
 

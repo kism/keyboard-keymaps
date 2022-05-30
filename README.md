@@ -2,16 +2,30 @@
 
 Keymap .json, .via and .h files for my keebs
 
+## QMK General Setup
+
+```
+Debian / Ubuntu / Devuan: sudo apt install -y git python3-pip
+Fedora / Red Hat / CentOS: sudo yum -y install git python3-pip
+Arch / Manjaro: sudo pacman --needed --noconfirm -S git python-pip libffi
+```
+
+```
+mkdir ~/src
+python3 -m pip install --user qmk
+echo 'PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc && source $HOME/.bashrc
+qmk setup -H ~/src/qmk_firmware
+```
+
 ## ObinsKit/Hexcore Anne Pro 2 (c18) VIA Firmware
 
 ### Compile firmware (Linux Only (in my opinion, use WSL))
 
 Original guide: https://www.reddit.com/r/AnnePro/comments/txgecj/anne_pro_2_with_via/
 
-`pacman -S rust gcc make`
-
-
 ```
+mkdir ~/src/jpe230_ap2
+cd ~/src/jpe230_ap2
 git clone -b jpe230_ap2 --single-branch --recursive https://github.com/Jpe230/qmk_firmware.git
 cd qmk_firmware
 make annepro2/c18:via
@@ -60,7 +74,9 @@ TKTKTKTK
 
 https://github.com/vial-kb/vial-qmk
 
-```git clone https://github.com/vial-kb/vial-qmk.git
+```
+cd ~/src
+git clone https://github.com/vial-kb/vial-qmk.git
 make kbdfans/kbd67/mkiirgb/v3:vial
 ```
 

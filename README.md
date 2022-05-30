@@ -70,7 +70,17 @@ https://github.com/Jpe230/qmk_firmware/blob/jpe230_ap2/keyboards/annepro2/keymap
 
 ## YMDK NP21
 
-TKTKTKTK
+```
+make ymdk/np21:via
+```
+
+Hold the top left key down while plugging it into your computer and use the qmk toolbox to flash the firmware
+
+https://github.com/qmk/qmk_toolbox/releases
+
+Use vial customise the keymap
+
+Sideload the VIA json: 
 
 ## KBD67 Lite MKii v3 Vial firmware
 

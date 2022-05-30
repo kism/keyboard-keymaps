@@ -4,6 +4,8 @@ Keymap .json, .via and .h files for my keebs
 
 ## QMK General Setup
 
+Original Guide: https://docs.qmk.fm/#/newbs_getting_started
+
 ```
 Debian / Ubuntu / Devuan: sudo apt install -y git python3-pip
 Fedora / Red Hat / CentOS: sudo yum -y install git python3-pip

@@ -89,6 +89,7 @@ https://github.com/vial-kb/vial-qmk
 ```
 cd ~/src
 git clone https://github.com/vial-kb/vial-qmk.git
+cd ~/src/vial-qmk
 make kbdfans/kbd67/mkiirgb/v3:vial
 ```
 

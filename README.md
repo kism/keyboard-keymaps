@@ -80,7 +80,7 @@ https://github.com/qmk/qmk_toolbox/releases
 
 Use vial customise the keymap
 
-Sideload the VIA json: https://github.com/kism/keyboard-keymaps/blob/master/via/annepro2/via_ansi_c18.json
+Sideload the VIA json: 
 
 ## KBD67 Lite MKii v3 Vial firmware
 

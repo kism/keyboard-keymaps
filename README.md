@@ -2,7 +2,7 @@
 
 Keymap .json, .via and .h files for my keebs
 
-## QMK General Setup
+## 🛠️ QMK General Setup
 
 Original Guide: https://docs.qmk.fm/#/newbs_getting_started
 
@@ -19,7 +19,7 @@ echo 'PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc && source $HOME/.bashrc
 qmk setup -H ~/src/qmk_firmware
 ```
 
-## ObinsKit/Hexcore Anne Pro 2 (c18) VIA Firmware
+## ⌨ ObinsKit/Hexcore Anne Pro 2 (c18) VIA Firmware
 
 ### Compile firmware (Linux Only (in my opinion, use WSL))
 
@@ -68,7 +68,7 @@ https://get.vial.today/
 
 https://github.com/Jpe230/qmk_firmware/blob/jpe230_ap2/keyboards/annepro2/keymaps/via/via_ansi_c18.json
 
-## YMDK NP21
+## ⌨ YMDK NP21
 
 ```
 make ymdk/np21:via
@@ -82,7 +82,7 @@ Use vial customise the keymap
 
 Sideload the VIA json: 
 
-## KBD67 Lite MKii v3 Vial firmware
+## ⌨ KBD67 Lite MKii v3 Vial firmware
 
 https://github.com/vial-kb/vial-qmk
 

@@ -26,10 +26,10 @@ qmk setup -H ~/src/qmk_firmware
 Original guide: https://www.reddit.com/r/AnnePro/comments/txgecj/anne_pro_2_with_via/
 
 ```
-mkdir ~/src/jpe230_ap2
-cd ~/src/jpe230_ap2
-git clone -b jpe230_ap2 --single-branch --recursive https://github.com/Jpe230/qmk_firmware.git
-cd qmk_firmware
+mkdir ~/src
+cd ~/src
+git clone -b jpe230_ap2 --single-branch --recursive https://github.com/Jpe230/qmk_firmware.git qmk_firmware-jpe230_ap2
+cd ~/src/qmk_firmware-jpe230_ap2
 make annepro2/c18:via
 ```
 
@@ -80,7 +80,7 @@ https://github.com/qmk/qmk_toolbox/releases
 
 Use vial customise the keymap
 
-Sideload the VIA json: 
+Sideload the VIA json: https://github.com/kism/keyboard-keymaps/blob/master/via/annepro2/via_ansi_c18.json
 
 ## KBD67 Lite MKii v3 Vial firmware
 

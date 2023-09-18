@@ -72,7 +72,6 @@ qmk compile -kb kbdfans/kbd67/mkiirgb/v3 -kb vial
 
 <https://get.vial.today/>
 
-
 ## ⌨ Bakeneko65 Vial firmware
 
 <https://github.com/vial-kb/vial-qmk>

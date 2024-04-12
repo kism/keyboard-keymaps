@@ -38,7 +38,7 @@
                 "KC_INSERT"
             ],
             [
-                "LT1(KC_ESCAPE)",
+                "KC_LCTRL",
                 "KC_A",
                 "KC_S",
                 "KC_D",
@@ -72,7 +72,7 @@
                 "M15"
             ],
             [
-                "KC_LCTRL",
+                "LT1(KC_ESCAPE)",
                 "KC_LGUI",
                 "KC_LALT",
                 -1,

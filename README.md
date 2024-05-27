@@ -7,15 +7,14 @@ Keymap .json, .via and .h files for my keebs
 Original Guide: <https://docs.qmk.fm/#/newbs_getting_started>
 
 ```bash
-sudo apt install -y git python3-pip # Debian / Ubuntu / Devuan
-sudo yum -y install git python3-pip # Fedora / Red Hat / CentOS
-sudo pacman --needed --noconfirm -S git python-pip libffi # Arch / Manjaro
+sudo apt install -y git pipx # Debian / Ubuntu / Devuan
+sudo yum -y install git pipx # Fedora / Red Hat / CentOS
+sudo pacman --needed --noconfirm -S git pipx libffi # Arch / Manjaro
 ```
 
 ```bash
 mkdir ~/src
-python3 -m pip install --user qmk
-echo 'PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc && source $HOME/.bashrc
+pipx install qmk
 qmk setup -H ~/src/qmk_firmware
 ```
 

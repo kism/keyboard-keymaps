@@ -41,7 +41,9 @@ cargo build --release
 ./annepro2_tools annepro2_c18_via.bin
 ```
 
-<https://get.vial.today/>
+Flash with qmk toolkit.
+
+Configure with <https://get.vial.today/>
 
 ## ⌨ KBD67 Lite MKii v3 Vial firmware
 
@@ -54,7 +56,9 @@ git clone https://github.com/vial-kb/vial-qmk.git
 
 ```
 
-<https://get.vial.today/>
+Flash with qmk toolkit.
+
+Configure with <https://get.vial.today/>
 
 ## ⌨ Bakeneko65 Vial firmware
 
@@ -67,10 +71,13 @@ git clone https://github.com/vial-kb/vial-qmk.git
 
 ```
 
+Flash with qmk toolkit.
+
+Configure with <https://get.vial.today/>
 
 ## ⌨ YMDK YMD09 QMK firmware
 
-<https://github.com/vial-kb/vial-qmk>
+<[https://github.com/vial-kb/vial-qmk](https://github.com/qmk/qmk_firmware)>
 
 ```bash
 cd ~/src
@@ -78,5 +85,4 @@ git clone https://github.com/qmk/qmk_firmware.git
 ./util/docker_build.sh ymdk/ymd09:kism
 ```
 
-
-<https://get.vial.today/>
+Flash with qmk toolkit.

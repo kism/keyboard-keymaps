@@ -38,7 +38,7 @@
                 "KC_INSERT"
             ],
             [
-                "LT(1, KC_ESCAPE)",
+                "KC_LCTRL",
                 "KC_A",
                 "KC_S",
                 "KC_D",
@@ -72,7 +72,7 @@
                 "KC_CALC"
             ],
             [
-                "KC_LCTRL",
+                "LT1(KC_ESCAPE)",
                 "KC_LGUI",
                 "KC_LALT",
                 -1,
@@ -461,7 +461,7 @@
         [],
         []
     ],
-    "vial_protocol": 5,
+    "vial_protocol": 6,
     "via_protocol": 9,
     "tap_dance": [],
     "combo": [],

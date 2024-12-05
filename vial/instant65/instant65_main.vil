@@ -279,7 +279,7 @@
                 "M11",
                 "M12",
                 "KC_TRNS",
-                "MAGIC_UNSWAP_LALT_LGUI"
+                "MAGIC_TOGGLE_ALT_GUI"
             ],
             [
                 "KC_TRNS",
@@ -1449,6 +1449,6 @@
         "18": 0,
         "19": 80,
         "20": 5,
-        "21": 0
+        "21": 12
     }
 }

@@ -156,7 +156,7 @@
                 "KC_TRNS",
                 "KC_TRNS",
                 "KC_PGUP",
-                "KC_TRNS"
+                "DF(0)"
             ],
             [
                 "KC_RCTRL",
@@ -243,7 +243,7 @@
                 "KC_KP_PLUS",
                 "KC_TRNS",
                 "KC_VOLU",
-                "KC_TRNS"
+                "DF(3)"
             ],
             [
                 "KC_TRNS",
@@ -312,7 +312,7 @@
                 "KC_TRNS",
                 "KC_TRNS",
                 -1,
-                "KC_TRNS",
+                "BL_TOGG",
                 "KC_TRNS"
             ],
             [
@@ -339,7 +339,7 @@
                 -1,
                 -1,
                 -1,
-                "BL_TOGG",
+                "KC_ENTER",
                 -1,
                 -1,
                 -1,

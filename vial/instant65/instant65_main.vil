@@ -283,9 +283,9 @@
             ],
             [
                 "KC_TRNS",
-                "KC_TRNS",
-                "KC_TRNS",
-                "KC_TRNS",
+                "KC_Q",
+                "KC_1",
+                "KC_2",
                 "KC_TRNS",
                 "KC_TRNS",
                 "KC_TRNS",
@@ -461,35 +461,17 @@
         [
             [
                 "down",
-                "KC_LGUI"
-            ],
-            [
-                "delay",
-                10
+                "KC_LGUI",
+                "KC_LSHIFT"
             ],
             [
                 "tap",
-                "KC_R"
+                "KC_5"
             ],
             [
                 "up",
-                "KC_LGUI"
-            ],
-            [
-                "delay",
-                200
-            ],
-            [
-                "text",
-                "python.exe"
-            ],
-            [
-                "tap",
-                "KC_ENTER"
-            ],
-            [
-                "delay",
-                5
+                "KC_LGUI",
+                "KC_LSHIFT"
             ]
         ]
     ],

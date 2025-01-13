@@ -69,7 +69,7 @@
                 "KC_RSHIFT",
                 -1,
                 "KC_UP",
-                "KC_CALC"
+                "M0"
             ],
             [
                 "LT1(KC_ESCAPE)",
@@ -191,7 +191,7 @@
                 "KC_F22",
                 "KC_F23",
                 "KC_F24",
-                "KC_TRNS",
+                "M0",
                 "KC_TRNS"
             ],
             [
@@ -279,7 +279,7 @@
                 "M11",
                 "M12",
                 "KC_TRNS",
-                "KC_TRNS"
+                "MAGIC_TOGGLE_ALT_GUI"
             ],
             [
                 "KC_TRNS",
@@ -362,13 +362,17 @@
         [
             [
                 "down",
-                "KC_KP_0",
-                "KC_KP_0"
+                "KC_LALT",
+                "KC_LSHIFT"
+            ],
+            [
+                "tap",
+                "KC_S"
             ],
             [
                 "up",
-                "KC_KP_0",
-                "KC_KP_0"
+                "KC_LALT",
+                "KC_LSHIFT"
             ]
         ],
         [
@@ -386,71 +390,12 @@
         [
             [
                 "text",
-                "kieran.gee@datacom.com.au"
+                "kieran.gee@thekids.org.au"
             ]
         ],
-        [
-            [
-                "text",
-                "kieran.gee"
-            ]
-        ],
-        [
-            [
-                "down",
-                "KC_LCTRL",
-                "KC_T"
-            ],
-            [
-                "up",
-                "KC_LCTRL",
-                "KC_T"
-            ],
-            [
-                "delay",
-                150
-            ],
-            [
-                "text",
-                "https://autist.network/keeb\n"
-            ],
-            [
-                "delay",
-                150
-            ],
-            [
-                "tap",
-                "KC_ENTER"
-            ]
-        ],
-        [
-            [
-                "down",
-                "KC_LCTRL",
-                "KC_T"
-            ],
-            [
-                "up",
-                "KC_LCTRL",
-                "KC_T"
-            ],
-            [
-                "delay",
-                150
-            ],
-            [
-                "text",
-                "https://cad-comic.com/comic/loss/"
-            ],
-            [
-                "delay",
-                150
-            ],
-            [
-                "tap",
-                "KC_ENTER"
-            ]
-        ],
+        [],
+        [],
+        [],
         [],
         [],
         [],

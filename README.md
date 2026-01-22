@@ -85,4 +85,5 @@ git clone https://github.com/qmk/qmk_firmware.git
 ./util/docker_build.sh ymdk/ymd09:kism
 ```
 
+The file will be at the root of the repo, the qmk vscode settings will hide it.
 Flash with qmk toolkit.

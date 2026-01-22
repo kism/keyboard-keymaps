@@ -121,7 +121,7 @@
                 "KC_PSCREEN",
                 "KC_SCROLLLOCK",
                 "KC_PAUSE",
-                "RESET",
+                "QK_BOOT",
                 "KC_TRNS"
             ],
             [
@@ -156,7 +156,7 @@
                 "KC_TRNS",
                 "KC_TRNS",
                 "KC_PGUP",
-                "DF(0)"
+                "KC_TRNS"
             ],
             [
                 "KC_RCTRL",
@@ -243,7 +243,7 @@
                 "KC_KP_PLUS",
                 "KC_TRNS",
                 "KC_VOLU",
-                "DF(3)"
+                "KC_TRNS"
             ],
             [
                 "KC_TRNS",
@@ -283,9 +283,9 @@
             ],
             [
                 "KC_TRNS",
-                "KC_Q",
-                "KC_1",
-                "KC_2",
+                "KC_TRNS",
+                "KC_TRNS",
+                "KC_TRNS",
                 "KC_TRNS",
                 "KC_TRNS",
                 "KC_TRNS",
@@ -391,30 +391,8 @@
         ],
         [
             [
-                "down",
-                "KC_LCTRL",
-                "KC_T"
-            ],
-            [
-                "up",
-                "KC_LCTRL",
-                "KC_T"
-            ],
-            [
-                "delay",
-                150
-            ],
-            [
                 "text",
-                "https://autist.network/keeb\n"
-            ],
-            [
-                "delay",
-                150
-            ],
-            [
-                "tap",
-                "KC_ENTER"
+                "curl --silent https://raw.githubusercontent.com/kism/dotfiles/main/setup_simple.sh | bash && . ~/.bashrc && bind -f ~/.inputrc"
             ]
         ],
         [
@@ -1219,6 +1197,200 @@
             "options": 7
         }
     ],
+    "alt_repeat_key": [
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        },
+        {
+            "keycode": "KC_NO",
+            "alt_keycode": "KC_NO",
+            "allowed_mods": 0,
+            "options": 0
+        }
+    ],
     "settings": {
         "1": 0,
         "2": 50,
@@ -1227,7 +1399,6 @@
         "5": 5,
         "6": 5000,
         "7": 200,
-        "8": 0,
         "9": 10,
         "10": 20,
         "11": 8,
@@ -1240,6 +1411,12 @@
         "18": 0,
         "19": 80,
         "20": 5,
-        "21": 12
+        "21": 12,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 200,
+        "26": 0,
+        "27": 0
     }
 }

@@ -26,7 +26,7 @@ git clone https://github.com/vial-kb/vial-qmk.git
 choco install rust
 choco install mingw
 git clone https://github.com/OpenAnnePro/AnnePro2-Tools.git
-cd AnnePro2-Tools.git
+cd AnnePro2-Tools
 cargo build --release
 .\annepro2_tools.exe .\annepro2_c18_via.bin
 ```
